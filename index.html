@@ -11,13 +11,17 @@
 
         <div id="user-input">
 
+            <!-- name -->
+            <label for="user-name">First name and Last name</label>
+            <input type="text" name="user-name" id="user-name" required placeholder="Type your name...">
+
             <!-- km -->
             <label for="user-km">km</label>
-            <input type="number" name="user-km" id="user-km">
+            <input type="number" name="user-km" id="user-km" required placeholder="How many km do you want to travel for?">
 
             <!-- age -->
             <label for="user-age">Age</label>
-            <input type="number" name="user-age" id="user-age">
+            <input type="number" name="user-age" id="user-age" required placeholder="How old are you">
             <!-- <select name="user-age" id="user-age" required>
                 <option value="minor">0-17</option>
                 <option value="adult">18-65</option>
@@ -29,6 +33,15 @@
                 Prezzo
             </button>
 
+        </div>
+
+        <div id="print-ticket">
+            <div class="ticket-name"></div>
+            <div class="ticket-offer"></div>
+            <div class="random-code"></div>
+            <div class="wagon"></div>
+            <div class="ticket-print-price"></div>
+            
         </div>
 
     </main>
