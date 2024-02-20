@@ -26,11 +26,24 @@ createBtn.addEventListener('click', function () {
     let ticketPrice;
 
 
-    if (userAge.value < 18) {
+/*     if (userAge.value < 18) {
         ticketPrice = (fullPrice - (fullPrice * minorDiscount)).toFixed(2);
         ticketOffer.innerHTML = "Junior ticket";
     }
     else if (userAge.value > 65) {
+        ticketPrice = (fullPrice - (fullPrice * seniorDiscount)).toFixed(2);
+        ticketOffer.innerHTML = "Senior ticket";
+    }
+    else {
+        ticketPrice = fullPrice.toFixed(2);
+        ticketOffer.innerHTML = "Standard ticket";
+    } */
+
+    if (userAge.value === "minor") {
+        ticketPrice = (fullPrice - (fullPrice * minorDiscount)).toFixed(2);
+        ticketOffer.innerHTML = "Junior ticket";
+    }
+    else if (userAge.value === "senior") {
         ticketPrice = (fullPrice - (fullPrice * seniorDiscount)).toFixed(2);
         ticketOffer.innerHTML = "Senior ticket";
     }
@@ -54,9 +67,10 @@ createBtn.addEventListener('click', function () {
 
 resetBtn.addEventListener("click", function(){
     console.log("Btn cancel");
-    userName.value = " "
-    userKm.value = null
-    userAge.value = null
+    userName.value = null;
+    userKm.value = null;
+    userAge.value = null;
+    ticketArea.classList.add("hide")
 })
 
 

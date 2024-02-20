@@ -25,54 +25,61 @@
 
                 <h1 class="text-uppercase text-center text-white">calcola il prezzo del tuo biglietto</h1>
 
-                <div id="user-input" class="container-fluid py-4 mt-3 bg-white rounded">
+                <div id="user-input" class="user-container w-100 py-4 mt-3 bg-white rounded">
 
-                    <div class="row justify-content-evenly">
+                    <div class="container-fluid">
+                        <div class="row justify-content-evenly align-items-end gx-5 gy-3">
 
-                        <!-- name -->
-                        <div class="name-lastname col-3">
-                            <label for="user-name" class="form-label">Nome Cognome</label>
-                            <input type="text" name="user-name" id="user-name" class="form-control" required
-                                placeholder="Type your name...">
+                            <!-- name -->
+                            <div class="name-lastname col-12 col-md-4">
+                                <label for="user-name" class="form-label">Nome Cognome</label>
+                                <input type="text" name="user-name" id="user-name" class="form-control" required
+                                    placeholder="Scrivi il tuo nome...">
+                            </div>
+
+                            <!-- km -->
+                            <div class="km col-12 col-md-4">
+                                <label for="user-km" class="form-label">Km da percorrere</label>
+                                <input type="number" name="user-km" id="user-km" class="form-control" required
+                                    placeholder="Quanti km?">
+                            </div>
+
+                            <!-- age -->
+
+                            <div class="age col-12 col-md-4">
+                                <label for="user-age" class="form-label">Seleziona la tua età</label>
+                                <select name="user-age" id="user-age" class="form-select" required>
+                                    <option value="minor">0-17</option>
+                                    <option value="adult">18-65</option>
+                                    <option value="senior">65+</option>
+                                </select>
+                            </div>
+
+
+
+                            <!-- <div class="age col-12 col-md-4">
+                                <label for="user-age" class="form-label">Età</label>
+                                <input type="number" name="user-age" id="user-age" class="form-control" required
+                                    placeholder="Inserisci la tua età">
+                            </div> -->
+
+                            <!-- btn -->
+
+                            <div class="buttons text-center mt-4">
+                                <button id="create-btn" class="btn btn-custom me-3">
+                                    Genera
+                                </button>
+
+                                <button id="reset-btn" class="btn btn-custom">
+                                    Annulla
+                                </button>
+                            </div>
+
+
                         </div>
-
-                        <!-- km -->
-                        <div class="km col-3">
-                            <label for="user-km" class="form-label">Km da percorrere</label>
-                            <input type="number" name="user-km" id="user-km" class="form-control" required
-                                placeholder="How many km do you want to travel for?">
-                        </div>
-
-                        <!-- age -->
-                        <div class="age col-3">
-                            <label for="user-age" class="form-label">Età</label>
-                            <input type="number" name="user-age" id="user-age" class="form-control" required
-                                placeholder="How old are you">
-                        </div>
-
-                        <!-- btn -->
-
-                        <div class="buttons text-center mt-4">
-                            <button id="create-btn" class="btn btn-primary me-3">
-                                Genera
-                            </button>
-
-                            <button id="reset-btn" class="btn btn-primary">
-                                Annulla
-                            </button>
-                        </div>
-
-
-                        <!-- age -->
-
-                        <!-- <select name="user-age" id="user-age" required>
-                    <option value="minor">0-17</option>
-                    <option value="adult">18-65</option>
-                    <option value="senior">65+</option>
-                     </select> -->
-
-
                     </div>
+
+
                 </div>
             </div>
 
@@ -88,36 +95,36 @@
                         <h3>Dettaglio passeggero</h3>
 
                         <div class="ticket-preview container-fluid mt-3">
-                            <div class="row h-100 justify-content-between">
+                            <div class="row">
 
                                 <!-- name -->
-                                <div class="ticket-name h-100 col-3">
+                                <div class="ticket-name col-12 col-sm-8 col-md-4">
                                     <h4 class="text-uppercase text-center pb-3">nome passeggero</h4>
                                     <p class="text-center">ciao</p>
                                 </div>
 
                                 <!-- offer -->
-                                <div class="ticket-offer col-2">
+                                <div class="ticket-offer col-6 col-sm-4 col-md-2">
                                     <h5>Offerta</h5>
-                                    <p>ciao</p>
+                                    <p></p>
                                 </div>
 
                                 <!-- wagon -->
-                                <div class="wagon col-2">
+                                <div class="wagon col-6 col-sm-4 col-md-2">
                                     <h5>Carrozza</h5>
-                                    <p>ciao</p>
+                                    <p></p>
                                 </div>
 
                                 <!-- code -->
-                                <div class="random-code col-2">
+                                <div class="random-code col-6 col-sm-4 col-md-2">
                                     <h5>Codice CP</h5>
-                                    <p>ciao</p>
+                                    <p></p>
                                 </div>
 
                                 <!-- cost -->
-                                <div class="ticket-print-price col-2">
+                                <div class="ticket-print-price col-6 col-sm-4 col-md-2">
                                     <h5>Costo biglietto</h5>
-                                    <p>ciao</p>
+                                    <p></p>
                                 </div>
 
                             </div>
