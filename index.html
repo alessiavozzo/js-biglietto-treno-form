@@ -28,17 +28,24 @@
                 <div id="user-input" class="user-container w-100 py-4 mt-3 bg-white rounded">
 
                     <div class="container-fluid">
-                        <div class="row justify-content-evenly align-items-end gx-5 gy-3">
+                        <div class="row justify-content-evenly align-items-end gx-3 gy-3">
 
                             <!-- name -->
-                            <div class="name-lastname col-12 col-md-4">
-                                <label for="user-name" class="form-label">Nome Cognome</label>
+                            <div class="name col-12 col-md-6 col-lg-3">
+                                <label for="user-name" class="form-label">Nome</label>
                                 <input type="text" name="user-name" id="user-name" class="form-control" required
-                                    placeholder="Scrivi il tuo nome...">
+                                    placeholder="Scrivi il tuo nome">
+                            </div>
+
+                            <!-- lastname -->
+                            <div class="lastname col-12 col-md-6 col-lg-3">
+                                <label for="user-lastname" class="form-label">Cognome</label>
+                                <input type="text" name="user-lastname" id="user-lastname" class="form-control" required
+                                    placeholder="Scrivi il tuo cognome">
                             </div>
 
                             <!-- km -->
-                            <div class="km col-12 col-md-4">
+                            <div class="km col-12 col-md-6 col-lg-3">
                                 <label for="user-km" class="form-label">Km da percorrere</label>
                                 <input type="number" name="user-km" id="user-km" class="form-control" required
                                     placeholder="Quanti km?">
@@ -46,7 +53,7 @@
 
                             <!-- age -->
 
-                            <div class="age col-12 col-md-4">
+                            <div class="age col-12 col-md-6 col-lg-3">
                                 <label for="user-age" class="form-label">Seleziona la tua età</label>
                                 <select name="user-age" id="user-age" class="form-select" required>
                                     <option value="minor">0-17</option>

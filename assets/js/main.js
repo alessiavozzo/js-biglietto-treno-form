@@ -4,6 +4,7 @@ const userKm = document.getElementById("user-km");
 const userAge = document.getElementById("user-age");
 const createBtn = document.getElementById("create-btn");
 const userName = document.getElementById("user-name");
+const userLastName = document.getElementById("user-lastname")
 
 //ticket
 const ticketArea = document.getElementById("ticket-area")
@@ -54,9 +55,14 @@ createBtn.addEventListener('click', function () {
 
     // console.log(ticketPrice);
 
-    ticketArea.classList.remove("hide")
+    if (userName.value == "" || userLastName.value == "" || userKm.value ==""){
+        alert("Inserisci un valore valido")
+    }
+    else{
+        ticketArea.classList.remove("hide")
+    }  
 
-    ticketName.innerHTML = userName.value; 
+    ticketName.innerHTML = `${userName.value} ${userLastName.value}`; 
     ticketCode.innerHTML = Math.ceil(Math.random() * 100000);
     ticketWagon.innerHTML = Math.ceil(Math.random() * 10);
     ticketPrintPrice.innerHTML = `${ticketPrice} €`;
@@ -68,6 +74,7 @@ createBtn.addEventListener('click', function () {
 resetBtn.addEventListener("click", function(){
     console.log("Btn cancel");
     userName.value = null;
+    userLastName.value = null;
     userKm.value = null;
     userAge.value = null;
     ticketArea.classList.add("hide")

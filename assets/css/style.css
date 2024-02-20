@@ -11,15 +11,16 @@
     background-color: var(--ticket-primary);
 }
 
+.custom-container{
+    max-width: 1200px;
+}
+
 /* #endregion common */
 
 
 /* #region user-data */
 
-.user-container{
-    padding-right: 4rem;
-    padding-left: 4rem;
-}
+
 label{
     display: block;
     text-align: center;
@@ -28,6 +29,8 @@ label{
 
 #user-input{
     color: var(--ticket-primary);
+    padding-right: 4rem;
+    padding-left: 4rem;
 
     & input, select{
         border-color: var(--ticket-primary)!important;        
