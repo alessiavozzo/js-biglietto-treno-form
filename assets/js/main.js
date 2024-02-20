@@ -6,6 +6,7 @@ const createBtn = document.getElementById("create-btn");
 const userName = document.getElementById("user-name");
 
 //ticket
+const ticketArea = document.getElementById("ticket-area")
 const ticketName = document.querySelector(".ticket-name > p");
 const ticketOffer = document.querySelector(".ticket-offer > p");
 const ticketPrintPrice = document.querySelector(".ticket-print-price > p");
@@ -40,10 +41,13 @@ createBtn.addEventListener('click', function () {
 
     // console.log(ticketPrice);
 
+    ticketArea.classList.remove("hide")
+
     ticketName.innerHTML = userName.value; 
     ticketCode.innerHTML = Math.ceil(Math.random() * 100000);
     ticketWagon.innerHTML = Math.ceil(Math.random() * 10);
     ticketPrintPrice.innerHTML = `${ticketPrice} €`;
+
 
 })
 

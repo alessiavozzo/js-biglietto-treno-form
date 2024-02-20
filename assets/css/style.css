@@ -1,6 +1,12 @@
 /* #region color palette */
 
 
+/* #region common */
+#site_main{
+    padding-top: 4rem;
+    background-color: lightcoral;
+}
+
 
 /* #region user-data */
 label{
@@ -11,6 +17,26 @@ label{
 
 /* #region ticket */
 
+.ticket-name{
+    background-color: grey;
+}
+
+.ticket-preview{ 
+    height: 150px;   
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+
+    & > .row > div{
+        padding: 1rem 0 1rem 0;
+    }
+}
+
+.ticket-preview > .row > div:not(:first-of-type){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .hide{
-    
+    display: none;
 }
